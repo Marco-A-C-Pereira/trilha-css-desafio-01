@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+:root {
+    --main-grad-effect: linear-gradient(180deg, #1472B7 0%, #33A8DB 100%);  
+    --main-color: #33A8DB;
+}
+
+
+.doc__struct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.banner{
+    background: 
+                url(assets/images/banner.png) left top,
+                linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(14, 41, 53) 50%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    border-bottom: 1px solid var(--main-color);
+
+}
+
+.logo{
+    background: rgba(0, 0, 0, 0.158);
+    border-radius: 100%;
+    width:  250px;
+    height: 250px;
+
+    display: flex;
+
+    
+    margin-bottom: 20px;
+}
+
+.logo img{
+    margin: auto;
+    height: 70%;
+}
+.banner-content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin: 50px auto;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    background: var(--main-grad-effect);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+
+    margin-bottom: 15px;
+}
+
+.banner button {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    padding: 15px 30px;
+   
+    
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source:var(--main-grad-effect);
+    background: var(--main-grad-effect);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    
+
+    color: white;
+    background: black;
+}
+
+#course-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 800px;
+}
+
+#course-content h2 {
+    margin-top: 100px;
+
+    font-size: 32px;
+    background: var(--main-grad-effect);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+
+    
+}
+
+#course-content p {
+    margin-top: 30px;
+}
+
+.modules-list {
+    width: 550px;
+}
+
+.module {
+    margin-top: 20px;
+    border: 1px solid var(--main-color);   
+    border-radius: 50px;
+    padding: 20px 0;
+    background: #252525;
+
+    box-shadow: inset -3px 4px 10px rgba(0, 0, 0, 0.747);
+}
+
+.module span {
+    color: var(--main-color);
+}
+
+#transform-world{
+    width: 100%;
+    margin: 100px 0;
+    padding: 200px;
+
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+
+    background-image: url(assets/images/woman-code.png) ;
+    
+}
+
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#transform-world p {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: lowercase;
+    text-shadow: 2px 2px var(--main-color);
+
+    max-width: 250px;
+}
+
+#professional-challenges{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 800px;
+}
+
+#professional-challenges:last-child{
+    margin-bottom: 100px;
+}
+
+#professional-challenges h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    
+    max-width: 600px;
+}
+
+#professional-challenges img {
+    margin: 50px 0 30px;
+}
+
+footer  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    padding: 50px;
+    border-top: 1px solid var(--main-color);
+    background: linear-gradient(0deg, rgba(18,53,69,1)  0%, rgba(0,0,0,1) 100%);
+}
+
+footer a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
